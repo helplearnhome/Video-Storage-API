@@ -1,15 +1,11 @@
 import os
-import uvicorn
 
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from starlette.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
-
-templates = Jinja2Templates(directory="templates")
 
 origins = ["*"]
 
